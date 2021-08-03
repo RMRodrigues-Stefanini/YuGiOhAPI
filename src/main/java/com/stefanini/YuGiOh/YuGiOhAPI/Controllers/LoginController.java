@@ -1,21 +1,19 @@
-package Controllers;
+package com.stefanini.YuGiOh.YuGiOhAPI.Controllers;
 
-import Entities.Users;
-import Repository.UsersRepository;
+import com.stefanini.YuGiOh.YuGiOhAPI.Repository.UsersRepository;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Users;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
 @CrossOrigin
 @RestController
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class LoginController {
 
-    @Autowired
-    private UsersRepository usersRepository;
+ UsersRepository usersRepository;
 
 
     @PostMapping

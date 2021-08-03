@@ -1,19 +1,17 @@
-package Controllers;
+package com.stefanini.YuGiOh.YuGiOhAPI.Controllers;
 
-import Entities.Cards;
-import Entities.Decks;
-import Entities.Users;
-import Repository.CardsRepository;
-import Repository.DecksRepository;
-import Repository.UsersRepository;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Cards;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Decks;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Users;
+import com.stefanini.YuGiOh.YuGiOhAPI.Repository.CardsRepository;
+import com.stefanini.YuGiOh.YuGiOhAPI.Repository.DecksRepository;
+import com.stefanini.YuGiOh.YuGiOhAPI.Repository.UsersRepository;
 import lombok.AllArgsConstructor;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Optional;
 
 @CrossOrigin
@@ -21,7 +19,6 @@ import java.util.Optional;
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class BancoCartasController {
 
-    @Autowired
     UsersRepository usersRepository;
 
     @Autowired

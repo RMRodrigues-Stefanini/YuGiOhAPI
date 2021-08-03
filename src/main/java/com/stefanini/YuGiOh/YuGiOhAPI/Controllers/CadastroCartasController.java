@@ -1,22 +1,18 @@
-package Controllers;
+package com.stefanini.YuGiOh.YuGiOhAPI.Controllers;
 
-import Entities.Cards;
-import Repository.CardsRepository;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Cards;
+import com.stefanini.YuGiOh.YuGiOhAPI.Repository.CardsRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Optional;
-
 @CrossOrigin
 @RestController
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class CadastroCartasController {
 
-    @Autowired
     private CardsRepository cardsRepository;
 
 

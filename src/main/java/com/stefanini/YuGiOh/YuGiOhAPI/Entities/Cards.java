@@ -1,9 +1,7 @@
-package Entities;
+package com.stefanini.YuGiOh.YuGiOhAPI.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 
@@ -31,6 +29,5 @@ public class Cards {
     private String img;
 
     @ManyToOne
-    @Column(name="id_CT")
     private CardType cardType;
 }

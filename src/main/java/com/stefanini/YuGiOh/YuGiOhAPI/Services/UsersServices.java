@@ -1,8 +1,8 @@
-package Services;
+package com.stefanini.YuGiOh.YuGiOhAPI.Services;
 
-import Entities.Cards;
-import Entities.Users;
-import Repository.UsersRepository;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Cards;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Users;
+import com.stefanini.YuGiOh.YuGiOhAPI.Repository.UsersRepository;
 import com.sun.istack.NotNull;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;

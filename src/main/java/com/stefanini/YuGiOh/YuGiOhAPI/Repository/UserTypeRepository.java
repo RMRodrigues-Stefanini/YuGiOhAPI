@@ -1,7 +1,7 @@
-package Repository;
+package com.stefanini.YuGiOh.YuGiOhAPI.Repository;
 
-import Entities.Cards;
-import Entities.UserType;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.Cards;
+import com.stefanini.YuGiOh.YuGiOhAPI.Entities.UserType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

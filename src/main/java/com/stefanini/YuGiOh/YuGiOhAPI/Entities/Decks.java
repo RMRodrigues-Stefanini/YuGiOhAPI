@@ -1,8 +1,7 @@
-package Entities;
+package com.stefanini.YuGiOh.YuGiOhAPI.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
@@ -15,9 +14,9 @@ public class Decks {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-       private int  id_Deck;
+    private int  id_Deck;
 
-    @Column(name="id_Card_User")
+
     @ManyToOne
     private CardUser cardUser;
 
